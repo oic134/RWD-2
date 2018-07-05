@@ -1,0 +1,144 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+q, blockquote {
+	quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none;
+}
+a img {
+	border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+html {
+}
+
+img{
+	max-width: 100%;
+	height: auto ;
+}
+.wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.header {
+	background: #f6f6f6;
+	height: 25px;
+}
+
+.menutop li{	
+	float: right;
+	margin-right: 20px;
+}
+.menutop a{
+	text-decoration: none;
+
+}
+.header2{
+	height: 70px;
+	border-bottom: 2px solid #d6d6d6;
+}
+.logo a{
+	text-decoration: none;
+	background-image: url(../images/logo.png);
+	width: 170px;
+	height: 36px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+}
+.menu{
+	float:right;
+
+}
+.menu li{
+	float:left;
+}
+.menu a{
+    text-decoration: none;
+	color:#00cc99;
+	 margin: 5px 30px 5px 5px;
+	 display: block;
+}
+.menu a:hover{
+	border-bottom: 3px solid #00cc99; 
+	padding:0 0 10px 0;
+}
+@media (max-width: 767px){
+	.header{
+		display: none;
+	}
+	.header2{
+		border:none;
+		position: relative;
+	}
+	.logo a{
+		margin: 0 auto;
+	}
+	.menu{
+		float:none;
+		text-align: center; 
+	}
+	.menu li{
+		
+		width: 50%;  /*變成兩欄式關鍵*/
+	}
+}
+.clearfix{
+	clear:both;
+}
+.content-feature{
+	float:right;
+}
+.content-feature li{
+	float:left;
+	width: 31.33333%;
+	margin: 0 1%;
+}
+.content {
+	text-align: center;
+}
+.feature-txt{
+	line-height: 1.5;
+   text-align:  justify;
+}
+.feature-txt p{
+	text-align:center;
+}
+.feature-ul li{
+	padding-left: 2em;
+}
+@media(max-width: 767px){
+	.content-feature li{
+		width: 98%;
+	}
+	.feature-ul li{
+	text-align: center;
+}
+}	
